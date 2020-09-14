@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #fff;
 }
 
 p {
@@ -22,12 +23,13 @@ h1 {
 }
 
 nav {
-    background-color: #000000;
+    background-color: #4f8aff;
     text-align: center;
     font-size: 0;
 }
 
 nav a {
+    background-color:  #4f8aff;
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
