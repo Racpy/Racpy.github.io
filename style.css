@@ -4,16 +4,23 @@
     background-color: #eee;
 }
 
+body {
+    padding-top: 60px;
+    font-family: Microsoft JhengHei,arial,helvetica,sans-serif;
+}
+
 p {
-    color: #999999;
-    font-size: 20px;
-    padding: 5px;
+    color: black;
+    font-size: 16px;
     text-align: center;
 }
 
-p a {
-    text-decoration: none;
-    color: #ee0063
+.container p {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 1em;
 }
 
 h1 {
@@ -25,11 +32,16 @@ h1 {
 nav {
     background-color: #4f8aff;
     text-align: center;
-    font-size: 0;
+    opacity: .85;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0px;
 }
 
 nav a {
-    background-color:  #4f8aff;
+    background-color: #4f8aff;
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
@@ -39,12 +51,5 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ffaa00;
-}
-
-.special {
-    color: black;
-    margin: 0px;
-    font-size: 16px;
-    padding-left: 10px;
+    background-color: #ff4b96;
 }
