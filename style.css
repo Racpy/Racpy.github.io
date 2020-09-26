@@ -15,6 +15,10 @@ p {
     text-align: center;
 }
 
+.special {
+    text-align: left;
+}
+
 .container p {
     width: 100%;
     max-width: 960px;
@@ -27,6 +31,22 @@ h1 {
     font-size: 30px;
     color:black;
     text-align: center;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.container ul {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 1em;
 }
 
 nav {
