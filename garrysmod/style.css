@@ -20,14 +20,25 @@ p {
 }
 
 .red {
+    text-align: left;
     color: red;
+}
+
+.green {
+    text-align: left;
+    color: green;
+}
+
+.cyan {
+    text-align: left;
+    color: rgb(0, 200, 255);
 }
 
 .container p {
     width: 100%;
     max-width: 960px;
     margin: auto;
-    line-height: 1.5;
+    line-height: 1;
     margin-bottom: 1em;
 }
 
@@ -35,13 +46,24 @@ h1 {
     font-size: 30px;
     color:black;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
 }
 
 h2 {
     font-size: 30px;
     color:black;
     text-align: center;
+    margin-bottom: 1em;
+}
+
+h3 {
+    width: 100%;
+    max-width: 960px;
+    font-size: 28px;
+    margin: auto;
+    line-height: 1;
+    color:black;
+    text-align: left;
     margin-bottom: 1em;
 }
 
