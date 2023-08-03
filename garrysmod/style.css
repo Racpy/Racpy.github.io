@@ -39,7 +39,31 @@ p {
     max-width: 960px;
     margin: auto;
     line-height: 1;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
+}
+
+.container p.second-note {
+    width: 100%;
+    max-width: 845px;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 0.8em;
+    text-align: left;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.container ul {
+    width: 100%;
+    max-width: 840px;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 0em;
+}
+
+.container ul ul {
+    list-style: disc;
+    padding: 10px 50px;
 }
 
 h1 {
@@ -57,21 +81,17 @@ h2 {
 }
 
 h3 {
+    background-color: #34495e;
+    padding: 16px 35px 16px 24px;
+    border-left: 8px solid #41b883;
+
     width: 100%;
     max-width: 960px;
     font-size: 28px;
     margin: auto;
     line-height: 1;
-    color:black;
+    color:#fff;
     text-align: left;
-    margin-bottom: 1em;
-}
-
-.container ul {
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-    line-height: 1.5;
     margin-bottom: 1em;
 }
 

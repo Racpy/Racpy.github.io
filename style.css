@@ -31,6 +31,14 @@ p {
     margin-bottom: 1em;
 }
 
+.container ul {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
 h1 {
     font-size: 30px;
     color:black;
@@ -45,11 +53,18 @@ h2 {
     margin-bottom: 1em;
 }
 
-.container ul {
+h3 {
+    background-color: #34495e;
+    padding: 16px 35px 16px 24px;
+    border-left: 8px solid #41b883;
+
     width: 100%;
-    max-width: 400px;
+    max-width: 960px;
+    font-size: 28px;
     margin: auto;
-    line-height: 1.5;
+    line-height: 1;
+    color:#fff;
+    text-align: left;
     margin-bottom: 1em;
 }
 
