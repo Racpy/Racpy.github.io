@@ -119,3 +119,14 @@ nav a {
 nav a:hover {
     background-color: #ff4b96;
 }
+
+.menu {
+    background-color: #4f8aff;
+    text-align: center;
+    opacity: .85;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    font-size: 0px;
+}
