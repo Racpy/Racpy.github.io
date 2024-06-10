@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racpy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wrap {
+            width: 1280px;
+            margin: auto;
+            display: flex;
+        }
+
+        .item {
+            width: 100%;
+            margin: 0 10px 10px;
+        }
+
+        .item img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .wrap-roles {
+            width: 170px;
+            margin: 0px 800px 0px 0px;
+            display: flex;
+        }
+
+        .item-roles {
+            width: 60%;
+            margin: 0 10px 10px;
+        }
+
+        .item-roles img {
+            width: 100%;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">首頁</a>
+        <a href="../garrysmod.html">Garry's Mod</a>
+        <a href="prepare.html">遊玩前準備</a>
+        <a href="introduce.html">遊戲玩法</a>
+        <a href="roles.html">角色介紹</a>
+        <a href="changelogs.html">更新日誌</a>
+    </nav>
+    <nav class="menu">
+        <a href="roles.html">無辜者陣營</a>
+        <a href="traitor_roles.html">叛徒陣營</a>
+        <a href="third_roles.html">中立陣營</a>
+    </nav>
+    <br><br>
+    <h2>角色介紹</h2>
+
+
+    <div class="container">
+        <h3>無辜者陣營</h3>
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(80, 173, 59)"; src="screenshot/roles/icon_inno.png" alt="">
+                </div>
+                <p class="special"><strong>無辜者</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">你是清白的，但你要怎麼證明呢，又有幾個叛徒潛伏在你們之中？</p>
+            <p class="special" style="font-style: italic;">找出其他同伴，活下去！</p><br>
+
+            <li style="color: rgb(0, 128, 0)">遊玩須知：大多情況下不會隨意擊殺任何人，只會出於自保還擊。</li>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(31, 77, 191)"; src="screenshot/roles/icon_det.png" alt="">
+                </div>
+                <p class="special"><strong>探長</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">找出你的同伴，壯大勢力！你有絕對的話語權，好好利用這個優勢。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>探長商店（預設鍵位：C）：敵隊陣營依比例死去，獲得額外點數。</li>
+                <li>DNA檢測器（裝備）：從屍體或是武器採取樣本，儀器會顯示兇手/使用者位置！</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(81, 123, 226)"; src="screenshot/roles/icon_snif.png" alt="">
+                </div>
+                <p class="special"><strong>探長的狗</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">探長信任的好狗。你與探長一樣有絕對的話語權，好好利用這個優勢。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>探長商店（預設鍵位：C）： 敵隊陣營依比例死去，獲得額外點數。</li>
+                <li>放大鏡（裝備）：能看見每位玩家的足跡。未確認的身分皆綠色足跡，紅色足跡表示該玩家剛才殺死了其他玩家。<br>
+                    確認身分後的足跡顏色會變成角色的代表顏色。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(255, 127, 80)"; src="screenshot/roles/icon_spy.png" alt="">
+                </div>
+                <p class="special"><strong>間諜</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">隸屬於無辜者陣營，潛伏在叛徒們之中，你的貢獻不會被發現也不能被發現。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>叛徒商店（預設鍵位：C）：無法獲得裝備，用於製造虛假的購買提示。</li>
+                <li>無線電干擾（被動）：當該回合有間諜時，叛徒的陣營語音及聊天會被禁用。</li>
+                <li>叛徒證明（被動）：叛徒視間諜為隊友，但間諜不知道誰是叛徒。</li>
+            </ul><br>
+            <p class="special"><strong>TIP：間諜作為無辜者陣營的角色，他也能夠回收屍體上殘留的點數並給予友方。</strong></p>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(185, 210, 95)"; src="screenshot/roles/icon_pri.png" alt="">
+                </div>
+                <p class="special"><strong>牧師</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">牧師能夠建立無辜陣營的強大兄弟會情誼。</p>
+            <p class="special" style="font-style: italic;">聖經上記載著：死靈法師與他的活死人軍團懼怕聖鷹的力量。</p>
+            <p class="special" style="font-style: italic;">據說死靈法師只要擁有了牧師的屍體，就能感染整個兄弟會。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>聖鷹（裝備）：使用聖鷹射向無辜陣營的玩家加入你的兄弟會。<br>射擊無辜者陣營以外的陣營會使牧師本人死亡。</li>
+                <li>聖袍（被動）：擁有10點護甲。</li><br>
+
+                <li style="color: rgb(200, 0, 0)">如果牧師角色被轉變，整個兄弟會成員也會轉變。</li>
+                <li style="color: rgb(200, 0, 0)">如果牧師招募Marker，會導致兄弟會成員全部被標記。</li>
+                <li style="color: rgb(200, 0, 0)">擁有兄弟會標記的信徒，被轉換時會殘留標記。</li>
+                <li style="color: rgb(200, 0, 0)">被標記的角色死亡後，標記會消失。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(80, 140, 90)"; src="screenshot/roles/icon_surv.png" alt="">
+                </div>
+                <p class="special"><strong>生存者</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">為了活命，生存者熟悉了各種裝備的使用方式，擁有動手製造的能力。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>製作裝備（預設鍵位：C）：能夠購買探長商店的裝備。</li>
+                <li>合作愉快（被動）：敵隊陣營依比例死去，會跟探長們一起獲得額外點數。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(215, 235, 10)"; src="screenshot/roles/icon_cv.png" alt="">
+                </div>
+                <p class="special"><strong>千里眼</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">隸屬於無辜陣營，千里眼擁有看透一切的能力。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>千里眼（被動）。能夠看到特殊的角色，在記分板中以紫色外框呈現在玩家的名字上，但分辨不出玩家是什麼角色。</li>
+                <li>恢復秩序（被動）。如果小丑被千里眼殺死，小丑血量會立刻恢復至100，且角色轉變為千里眼的搭檔。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(15, 67, 54)"; src="screenshot/roles/icon_occul.png" alt="">
+                </div>
+                <p class="special"><strong>神祕主義者</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">這名無辜者是一位虔誠的教徒，但是沒有人知道他信奉的教派是何方神聖 ...</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>神秘力量（被動）：當生命值低於25HP時死亡，獲得死後復活的能力，死亡地點周圍會有火焰燃燒著。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(200, 200, 200)"; src="screenshot/roles/icon_shini.png" alt="">
+                </div>
+                <p class="special"><strong>死神</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">死神隨機附身在一名無辜者身上，但這位無辜者並不知道 ...</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>無知（被動）：平時是無辜者的身分並不知情，只有死亡後才得知是死神身分並捲土重生。</li>
+                <li>死神降臨（被動）：重生後轉變身分，化身為持刀的死神，無法說話。<br>
+                    擁有一張叛徒清單（在畫面正下方），顯示所有殘餘的叛徒清單。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(255, 20, 147)"; src="screenshot/roles/icon_cup.png" alt="">
+                </div>
+                <p class="special"><strong>邱比特</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">羅馬神話中的小愛神，降臨祝福在某位無辜者。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>十字弩（裝備）：射向兩名玩家，讓他們成為戀人；或者射向一名玩家後按右鍵與自己成為戀人。<br>
+                    私奔（效果）：當兩名戀人處於不同陣營時會在此時轉換為中立陣營。</li>
+                <li>羅密歐與茱麗葉（被動）：戀人之間會共同分擔傷害，治療也是。若戀人死了，你也會在5秒後一起死亡。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(96, 113, 94)"; src="screenshot/roles/icon_tra.png" alt="">
+                </div>
+                <p class="special"><strong>捕手</strong></p>
+            </div><br>
+        </center>
+            <ul>
+                <p class="special" style="font-style: italic;">走遍各個地方，早就熟悉叛徒會在哪裡設下暗門及陷阱等。</p><br>
+
+                <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+                <ul>
+                    <li>火眼金睛（被動）：可以看見地圖的叛徒按鈕並可以觸發。</li>
+                    <p class="second-note">作為一個捕手能進入通風口也是理所當然的，它能使用通風口並看到所有通風口的位置，但只有30秒的時間。</p>
+                </ul>
+            </ul><br>
+
+    </div>
+</body>
+</html>

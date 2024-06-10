@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racpy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wrap {
+            width: 1280px;
+            margin: auto;
+            display: flex;
+        }
+
+        .item {
+            width: 100%;
+            margin: 0 10px 10px;
+        }
+
+        .item img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .wrap-roles {
+            width: 170px;
+            margin: 0px 800px 0px 0px;
+            display: flex;
+        }
+
+        .item-roles {
+            width: 60%;
+            margin: 0 10px 10px;
+        }
+
+        .item-roles img {
+            width: 100%;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">首頁</a>
+        <a href="../garrysmod.html">Garry's Mod</a>
+        <a href="prepare.html">遊玩前準備</a>
+        <a href="introduce.html">遊戲玩法</a>
+        <a href="roles.html">角色介紹</a>
+        <a href="changelogs.html">更新日誌</a>
+    </nav>
+    <nav class="menu">
+        <a href="roles.html">無辜者陣營</a>
+        <a href="traitor_roles.html">叛徒陣營</a>
+        <a href="third_roles.html">中立陣營</a>
+    </nav>
+    <br><br>
+    <h2>角色介紹</h2>
+
+
+    <div class="container">
+        <h3>中立陣營</h3>
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(245, 48, 155)"; src="screenshot/roles/icon_jes.png" alt="">
+                </div>
+                <p class="special"><strong>小丑</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">Why so serious?</p><br>
+
+            <p class="special" style="font-style: italic;">華麗謝幕（獲勝條件）：小丑被其他玩家用任何方式所擊殺，小丑即可獲勝。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>玩具槍（被動）: 小丑造成不了任何傷害，但仍可以透過暈眩彈或鐵橇將玩家推向地圖外墜樓造成傷害或擊殺。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(161, 58, 32)"; src="screenshot/roles/icon_rav.png" alt="">
+                </div>
+                <p class="special"><strong>餓死鬼</strong></p>
+            </div><br>
+        </center>
+            <ul>
+                <p class="special" style="font-style: italic;">從來沒有例子證明好話能安慰飢餓的胃。我不再是叛徒的同伴了。</p><br>
+
+                <p class="special" style="font-style: italic;">全都被我吞噬吧（獲勝條件）：殲滅其他陣營。</p><br>
+
+                <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+                <ul>
+                    <li>飢餓難耐（被動）：餓死鬼已經餓得受不了啦！每秒鐘會失去5點生命值。</li>
+                    <li>吞噬小刀（裝備）：對屍體使用次要攻擊吞噬，增加生命值上限、回復50HP及飢餓值。<br>
+                        與暴食者相比，餓死鬼的攻擊力已達到最高、吃屍體速度最快，生命值上限為250。</li>
+                    <li>我聞到所有能吸引我的味道（裝備）：餓死鬼已經餓到能聞出所有人的位置。</li>
+                </ul>
+            </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(131, 55, 85)"; src="screenshot/roles/icon_necro.png" alt="">
+                </div>
+                <p class="special"><strong>死靈法師</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">... 染上了瘟疫，然而他不僅沒有病死，還發現這種瘟疫在提供他力量，他變成了真正的死靈法師，瘟疫的教皇。</p><br>
+
+            <p class="special" style="font-style: italic;">瘟疫教皇（獲勝條件）：殲滅其他陣營。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>商店（預設鍵位：C）：初始2點。能購買的裝備與叛徒商店相同。</li>
+                <li>屍體雷達（裝備）。如有屍體，每15秒更新屍體的位置。</li>
+                <li>死靈法師的除顫器（裝備）: 能夠復活屍體，屍體的身分將轉變為殭屍與你並肩作戰。</li><br>
+                <div class="wrap-roles">
+                    <div class="item-roles">
+                        <img style="background-color:rgb(68, 28, 44)"; src="screenshot/roles/icon_zomb.png" alt="">
+                    </div>
+                    <p class="special"><strong>殭屍</strong></p>
+                </div>
+                <ul>
+                    <li>我們是他們的奴隸（被動）：殭屍的移動速度降低50%，且不能撿起或丟棄道具。</li>
+                    <li>死亡之鷹（裝備）：殭屍配戴著只有7發的Deagle，當子彈耗盡時也會死亡。</li>
+                </ul>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(100, 190, 205)"; src="screenshot/roles/icon_jack.png" alt="">
+                </div>
+                <p class="special"><strong>豺狼</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">兄弟同心，其利斷金。</p><br>
+
+            <p class="special" style="font-style: italic;">狼貪虎視（獲勝條件）: 殲滅其他陣營。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>商店（預設鍵位：C）：初始3點。能購買的裝備都是具有強大破壞力的。</li>
+                <li>搭檔沙鷹（裝備）：用搭檔沙鷹射向玩家，該玩家會加入你的陣營。<br>
+                    如果未擊中會有120秒冷卻時間，每擊殺一名玩家可以減少60秒。</li>
+                <li>土製防彈衣（被動）：擁有30點護甲。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(49, 105, 109)"; src="screenshot/roles/icon_sk.png" alt="">
+                </div>
+                <p class="special"><strong>連環殺手</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">我的內心正在發生一些可怕的事情，而我不知道為什麼。</p><br>
+
+            <p class="special" style="font-style: italic;">美國殺人魔（獲勝條件）: 殲滅其他陣營。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>商店（預設鍵位：C）：初始1點。能購買的裝備與叛徒商店相同。<br>
+                    不會因為敵隊陣營死亡獲得更多積分。不過他仍然可搜索屍體上的積分。</li>
+                <li>防彈西裝（被動）：擁有60點護甲。</li>
+                <li>追蹤器（被動）：可以透視牆後的所有玩家。</li>
+                <li>功能小刀（裝備）：使用主要攻擊可以造成40點傷害；次要攻擊可以擲出製造些許搖晃效果的震撼彈。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(125, 70, 135)"; src="screenshot/roles/icon_mark.png" alt="">
+                </div>
+                <p class="special"><strong>Marker</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">沒有人知道Marker的本名，只知道他是位對油漆與漆彈非常著魔的一個人。</p><br>
+
+            <p class="special" style="font-style: italic;">斯普拉頓（獲勝條件）：畫面右側會顯示需標記的人數。</p>
+            <p class="special" style="font-style: italic;">使用漆彈槍標記其他玩家或使用除顫器復活死亡的玩家並標記，標記足夠的玩家數量即可獲勝。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>漆彈槍（裝備）：主要攻擊為全自動射擊。</li>
+                <li>Marker的除顫器（裝備）：使用次數基於該回合的玩家數量。復活後的玩家會被標記。</li>
+                <li>全民公敵（被動）：擁有60點護甲。</li>
+                <li>自慚形穢（被動）：被標記的玩家無法對Marker本人造成傷害。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(190, 207, 210)"; src="screenshot/roles/icon_unk.png" alt="">
+                </div>
+                <p class="special"><strong>牆頭草</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">見風轉舵。</p><br>
+
+            <p class="special" style="font-style: italic;">牆頭草（獲勝條件）: 牆頭草活到最後總是輸。</p>
+            <p class="special" style="font-style: italic;">但如果被兇手殺死，會加入兇手的陣營。獲勝條件取決於加入的陣營。</p><br>
+
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>我就是你（被動）：牆頭草死亡後會進入重生倒數，倒數期間內若兇手沒有死亡會加入兇手的陣營。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(207, 148, 68)"; src="screenshot/roles/icon_pir.png" alt="">
+                </div>
+                <p class="special"><strong>海盜船長</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">Ahoy！夥計！</p><br>
+
+            <p class="special" style="font-style: italic;">ONE PIECE（獲勝條件）：與締結契約的陣營一起獲勝。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>海盜契約（裝備）：擲出給其他玩家，與撿起合同的玩家締結契約。</li>
+
+                <li style="color: rgb(200, 0, 0)">如果船員死亡，會掉落合同。其他人再次撿起它，船長會重新與該玩家締結契約。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(255, 115, 0)"; src="screenshot/roles/icon_bodygrd.png" alt="">
+                </div>
+                <p class="special"><strong>保鑣</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">我就是收了錢辦事，你要我怎樣？</p><br>
+
+            <p class="special" style="font-style: italic;">我跟定你了（獲勝條件）：與保護目標的陣營一起獲勝。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>保護目標（被動）：回合開始時保鑣會收到要保護的雇主指示。</li>
+                <li>保護失敗（被動）：雇主若死亡，保鑣會受到20點傷害。</li>
+                <li>雇主的憤怒（被動）：保鑣若攻擊雇主會受到150%的傷害反彈，雇主則會受到10%的傷害。</li>
+                <li>拒絕叛變（被動）：保鑣若殺死雇主會自殺。</li>
+            </ul>
+        </ul><br>
+
+    </div>
+</body>
+</html>

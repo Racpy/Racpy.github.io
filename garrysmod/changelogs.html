@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racpy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wrap {
+            width: 1440px;
+            margin: auto;
+            display: flex;
+        }
+
+        .item {
+            width: 100%;
+            margin: 0 10px 10px;
+        }
+
+        .item img {
+            width: 100%;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">首頁</a>
+        <a href="../garrysmod.html">Garry's Mod</a>
+        <a href="prepare.html">遊玩前準備</a>
+        <a href="introduce.html">遊戲玩法</a>
+        <a href="roles.html">角色介紹</a>
+        <a href="changelogs.html">更新日誌</a>
+    </nav>
+    <h2>更新日誌</h2>
+
+    <div class="container">
+        <p><strong>最近更新：2024/1/13</strong></p><br><br>
+
+
+        <p class="special"><strong>2024/1/13：</strong></p>
+        <p class="special"><strong>角色：</strong></p>
+        <ul>
+            <li>新增無辜者角色：捕手</li>
+            <p class="second-note">詳細內容至無辜者陣營查看</p>
+            <li>新增叛徒角色：IMPOSTOR</li>
+            <p class="second-note">詳細內容至叛徒陣營查看</p>
+        </ul><br>
+
+        <p class="special"><strong>地圖物件：</strong></p>
+        <ul>
+            <li>汽水：回合開始後會有7種不同效果的汽水生成在地圖上</li>
+            <ul>
+                <li>SpeedUp!™：移動速度提升75%</li>
+                <li>ShootUp!™：手槍及主武器類型攻擊速度提升50%</li>
+                <li>RageUp!™：提升武器傷害30%</li>
+                <li>JumpUp!™：可以跳兩次</li>
+                <li>HealUp!™：獲得額外的10點生命值［立即］</li>
+                <li>ArmorUp!™：獲得額外的10點護甲值［立即］</li>
+                <li>CreditUp!™：獲得額外的1點信用點數［立即］</li>
+            </ul>
+        </ul><br>
+
+        <p class="special"><strong>雜項：</strong></p>
+        <ul>
+            <li>新增一個裝備至探長商店：信標、攀爬</li>
+            <li>新增兩個裝備至叛徒商店：捕獸夾、攀爬</li>
+            <li>現在雷達會在移除或轉換角色後清除舊的雷達位置。</li>
+            <li>現在收音機只能由放置者撿起。</li>
+        </ul><br><br>
+
+
+        <p class="special"><strong>2023/12/16：</strong></p>
+        <p class="special"><strong>裝備：</strong></p>
+        <ul>
+            <li>金鋼狼爪子優化</li>
+            <ul>
+                <li>攻擊增加延遲補償，現在應該更好的判定命中敵人。</li>
+                <li>現在依照視角向上幅度使用次要攻擊能跳得比較高。</li>
+                <li>次要攻擊充能時間 5秒 > 1秒。</li>
+            </ul>
+        </ul><br>
+
+        <p class="special"><strong>角色：</strong></p>
+        <ul>
+            <li>新增中立角色：保鑣</li>
+            <p class="second-note">詳細內容至中立陣營查看</p>
+            <li>探長的狗</li>
+            <ul>
+                <li>放大鏡模型優化，修復若動態模糊開啟時鏡面未正確呈現的問題，現在需要使用次要攻擊切換模式來觀察腳步。</li>
+            </ul>
+        </ul><br>
+
+        <p class="special"><strong>雜項：</strong></p>
+        <ul>
+            <li>新增三個裝備至叛徒商店：綠色惡魔、龍息、TMP。</li>
+            <li>TMP現在不會在世界生成。</li>
+            <li>現在畫面下方會提示各個功能的快捷鍵。</li>
+            <p class="second-note">按下TAB會有更詳細的按鍵說明及左側道具、狀態效果說明，可以在 F1 > 外觀 > 介面調整。</p>
+            <li>現在除顫器會阻止復活已離線的玩家。</li>
+            <li>現在在空中衝刺也會消耗耐力。</li>
+            <li>修正衝刺系統的預測，尤其是高Ping的情況。</li>
+            <li>現在可以調整每位玩家的語音音量。</li>
+            <p class="second-note">打開記分板針對你想調整的玩家在語音圖案使用滾輪上或下。  </p>
+            <li>新增語音音量縮放模式。</li>
+            <p class="second-note">可以在 F1 > 遊戲性 > 語音 & 音量調整。</p>
+            <li>新增淡化旁觀者語音的功能。</li>
+            <p class="second-note">可以在 F1 > 遊戲性 > 語音 & 音量調整。</p>
+            <li>若遊戲不在畫面的最上層，玩家正在被復活時會在工作列提示。</li>
+        </ul><br><br>
+
+
+        <p class="special"><strong>2023/07/30：</strong></p>
+        <p class="special"><strong>裝備：</strong></p>
+        <ul>
+            <li>黃金沙鷹彈藥數 2+0 > 1+1</li>
+        </ul>
+        <p class="second-note">將彈匣內的彈藥改為一發，另一發補至備彈，降低任何有機會快速擊殺敵人的時間。</p>
+        <p class="special"><strong>角色：</strong></p>
+        <ul>
+            <li>催眠師：</li>
+            <ul>
+                <li>修正沒有給予雷達裝備的問題。</li>
+                <li>修正使用催眠師的洗腦除顫器後，奴隸不會獲得商店點數的問題。</li>
+            </ul>
+            <li>暴食者：</li>
+            <ul>
+                <li>修正當暴食者身分轉變時不會沒收雷達裝備的問題。</li>
+            </ul>
+            <li>牆頭草：</li>
+            <ul>
+                <li>修正被暴食者殺死後重生不會獲得飢餓值的問題。</li>
+                <li>修正被餓死鬼殺死後重生不會因為時間流失逐漸扣血的問題。</li>
+            </ul>
+        </ul><br><br>
+
+
+        <p class="special"><strong>2023/07/27：</strong></p>
+        <p class="special"><strong>新增武器：</strong></p>
+        <ul>
+            <li>SVT-40</li>
+            <li>FG-42</li>
+            <li>斯登 MK III</li>
+            <li>M3 黃油槍</li>
+            <li>PPSh-41</li>
+            <li>托卡列夫 TT-33</li>
+        </ul><br>
+
+        <p class="special"><strong>武器數值調整：</strong></p>
+        <ul>
+            <li>所有武器爆頭傷害加成從 2.7倍 > 2倍。</li>
+            <p class="second-note">TTK有點太高了，所以我們降低爆頭傷害倍率。</p>
+            <li>下列武器例外（維持4倍）：
+                <ul>
+                    <li>Deagle</li>
+                    <li>李-恩菲爾德 No.2</li>
+                    <li>狙擊槍、SG550、G3SG1</li>
+                    <li>三八式步槍</li>
+                    <li>李-恩菲爾德 No.4</li>
+                </ul>
+            </li>
+            <li>現在M2014 高斯步槍射擊後會有5秒的雷射軌跡且爆炸會有火花：</li>
+            <p class="second-note">M2014 高斯步槍能從遠處狙擊且有效的擊殺目標，原始的彈道軌跡並不明顯，所以我們認為需要加點醒目的特效。</p>
+            <li>平衡槍枝準確度及後座力</li>
+            <li>增加狙擊槍遠距離的準確度</li>
+        </ul><br>
+
+        <p class="special"><strong>雜項：</strong></p>
+        <ul>
+            <li>修正部分角色分數計分問題</li>
+        </ul><br><br>
+
+
+        <p class="special"><strong>2023/07/22：</strong></p>
+        <p class="special"><strong>雜項：</strong></p>
+        <ul>
+            <li>優化二戰栓式步槍機瞄FOV</li>
+            <li>調整眩暈彈的機制（movement player 可能會喜歡這樣的改變）</li>
+        </ul><br><br>
+
+
+        <p class="special"><strong>2023/07/21：</strong></p>
+        <p class="special"><strong>新增武器：</strong></p>
+        <ul>
+            <li>三八式步槍</li>
+            <li>李-恩菲爾德 No.4</li>
+            <li>李-恩菲爾德 No.2</li>
+            <li>Luger</li>
+            <li>十四式南部手槍</li>
+            <li>韋爾洛德</li>
+        </ul><br><br>
+
+
+        <p class="special"><strong>2023/07/20：</strong></p>
+        <p class="special"><strong>裝備：</strong></p>
+        <ul>
+            <li>黃金沙鷹擊殺規則已變更：</li>
+            <p class="second-note">射向非同陣營玩家會造成目標死亡，射向同陣營玩家會造成自己死亡。<br>
+            當黃金沙鷹掉落後被叛徒或中立陣營的玩家撿起，對該回合能造成的影響力太低，所以做此變更。<br>
+            無辜者陣營現在更應該保護好黃金沙鷹不能落入敵人手中。</p>
+            <li>叛徒特殊角色分配最低人數下限調整</li>
+            <li>Server tickrate從33調整至66</li>
+        </ul><br>
+
+        <p class="special"><strong>角色：</strong></p>
+        <ul>
+            <li>探長：</li>
+            <ul>
+                <li>護甲值 0 > 30</li>
+            </ul>
+            <li>劊子手：</li>
+            <ul>
+                <li>攻擊目標傷害 2倍 > 2.5倍</li>
+                <li>對非目標傷害造成的減傷 0.5倍 > 0.25倍</li>
+                <li>擊殺非目標玩家後發送新目標的懲罰時間 60秒 > 5秒</li>
+            </ul>
+            <li>殺手：</li>
+            <ul>
+                <li>殺手初始商店積分 0 > 1</li>
+                <li>現在殺手可以搜索屍體上未使用的積分</li>
+                <li>現在殺手配戴一把消音手槍</li>
+            </ul>
+            <li>Marker：</li>
+            <ul>
+                <li>Marker的漆彈槍發射模式從半自動改為全自動</li>
+            </ul>
+        </ul><br>
+
+    </div>
+</body>
+</html>

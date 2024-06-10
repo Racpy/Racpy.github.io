@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racpy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wrap {
+            width: 1280px;
+            margin: auto;
+            display: flex;
+        }
+
+        .item {
+            width: 100%;
+            margin: 0 10px 10px;
+        }
+
+        .item img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .wrap-roles {
+            width: 170px;
+            margin: 0px 800px 0px 0px;
+            display: flex;
+        }
+
+        .item-roles {
+            width: 60%;
+            margin: 0 10px 10px;
+        }
+
+        .item-roles img {
+            width: 100%;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">首頁</a>
+        <a href="../garrysmod.html">Garry's Mod</a>
+        <a href="prepare.html">遊玩前準備</a>
+        <a href="introduce.html">遊戲玩法</a>
+        <a href="roles.html">角色介紹</a>
+        <a href="changelogs.html">更新日誌</a>
+    </nav>
+    <nav class="menu">
+        <a href="roles.html">無辜者陣營</a>
+        <a href="traitor_roles.html">叛徒陣營</a>
+        <a href="third_roles.html">中立陣營</a>
+    </nav>
+    <br><br>
+    <h2>角色介紹</h2>
+
+
+    <div class="container">
+        <h3>叛徒陣營</h3>
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(209, 43, 39)"; src="screenshot/roles/icon_traitor.png" alt="">
+                </div>
+                <p class="special"><strong>叛徒</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">要不作英雄而死，要麼苟活到目睹自己被逼成惡棍。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>叛徒商店（預設鍵位：C）：叛徒擁有使用各式各樣裝備的能力。<br>
+                    敵隊陣營依比例死去，或是擊殺高價值目標來獲得額外點數。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(163, 15, 28)"; src="screenshot/roles/icon_exc.png" alt="">
+                </div>
+                <p class="special"><strong>劊子手</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">雖然有很多話想跟你說，但是一看到你的臉，就全都想不起來了。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>叛徒商店（預設鍵位：C）：沒有初始點數。<br>
+                    不會因為敵隊陣營死亡獲得更多積分。不過他仍然可搜索屍體上的積分。</li>
+                <li>處刑清單（被動）：劊子手會有一個目標，對該目標會造成250%傷害，非目標玩家只會造成75%傷害。<br>
+                    若擊殺錯誤的目標，新的目標會在5秒後出現。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(255, 13, 65)"; src="screenshot/roles/icon_mes.png" alt="">
+                </div>
+                <p class="special"><strong>催眠師</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">我從不允許我的病人在進來和出去的時候是一個樣子，而精心設計的謊言比真相更容易讓人相信。
+                </p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>叛徒商店（預設鍵位：C）：沒有初始點數。<br>
+                    不會因為敵隊陣營死亡獲得更多積分。不過他仍然可搜索屍體上的積分。</li>
+                <li>屍體雷達（裝備）：當身上持有洗腦除顫器時，如有屍體，每30秒更新屍體的位置。</li>
+                <li>催眠師的洗腦除顫器（裝備）：具有特殊除顫能力，可以復活死去的玩家並將他們洗腦成奴隸。<br>
+                    奴隸屬於叛徒陣營，有1點商店積分可使用。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(199, 40, 16)"; src="screenshot/roles/icon_glut.png" alt="">
+                </div>
+                <p class="special"><strong>暴食者</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">從來沒有例子證明好話能安慰飢餓的胃。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>無盡飢餓（被動）：擁有一條不斷減少的飢餓值，假如餓死會轉變身份成為餓死鬼。</li>
+                <li>吞噬小刀（裝備）：對屍體使用次要攻擊吞噬，增加生命值上限、回復50HP及飢餓值。<br>
+                    如果越餓，攻擊力越高、吃屍體速度越快，生命值上限為250。</li>
+                <li>屍體雷達（裝備）：每30秒更新屍體的位置。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(240, 96, 72)"; src="screenshot/roles/icon_hit.png" alt="">
+                </div>
+                <p class="special"><strong>殺手</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">如果你很擅長做某件事，絕對不要免費做這件事。</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>叛徒商店（預設鍵位：C）：初始1點。<br>
+                    不會因為敵隊陣營死亡獲得更多積分。不過他仍然可搜索屍體上的積分。</li>
+                <li>消音手槍（裝備）：高攻擊力手槍，被消音手槍一般擊殺後死者不會慘叫。</li>
+                <li>賞金（被動）：擁有一個目標，每殺死一個目標玩家就能獲得一點額外點數。</li>
+            </ul>
+        </ul><br>
+
+        <center>
+            <div class="wrap-roles">
+                <div class="item-roles">
+                    <img style="background-color:rgb(197, 17, 17)"; src="screenshot/roles/icon_impo.png" alt="">
+                </div>
+                <p class="special"><strong>IMPOSTOR</strong></p>
+            </div><br>
+        </center>
+        <ul>
+            <p class="special" style="font-style: italic;">Among Us ...?</p><br>
+
+            <li style="color: rgb(0, 128, 0)">特殊裝備：</li>
+            <ul>
+                <li>刺殺（被動）：刺殺一名玩家，冷卻時間45秒。</li>
+                <li>通風口（裝備）：可以在地圖上最多放置3個通風口，通風口是隱形的，會在玩家進入或退出後現形。</li>
+                <p class="second-note">通風口還未有人進入或退出時，可以使用次要攻擊拆下。</p>
+                <li>任務管理器（被動）：選擇地圖上要建立任務塔的預設位置。</li>
+                <p class="second-note">可以選擇預設任務塔的位置，或瞄準玩家建立一個新的位置，距離必須超過該玩家最近的任務塔位置1000個單位。</p>
+                <ul>
+                    <li>破壞燈光（被動）：持續時間55秒。</li>
+                    <li>破壞通訊（被動）：持續時間60秒。</li>
+                    <li>破壞氧氣（被動）：持續時間60秒。</li>
+                    <li>破壞反應爐（被動）：持續時間90秒。</li>
+                </ul>
+                <p class="second-note">破壞活動結束後，冷卻時間120秒</p>
+            </ul>
+        </ul><br>
+
+    </div>
+</body>
+</html>

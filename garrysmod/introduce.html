@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racpy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wrap {
+            width: 1280px;
+            margin: auto;
+            display: flex;
+        }
+
+        .item {
+            width: 100%;
+            margin: 0 10px 10px;
+        }
+
+        .item img {
+            width: 100%;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">首頁</a>
+        <a href="../garrysmod.html">Garry's Mod</a>
+        <a href="prepare.html">遊玩前準備</a>
+        <a href="introduce.html">遊戲玩法</a>
+        <a href="roles.html">角色介紹</a>
+        <a href="changelogs.html">更新日誌</a>
+    </nav>
+    <h2>如何遊玩？</h2>
+
+    <div class="container">
+        <p class="red"><strong>第一次遊玩可以按下［F1］查看有哪些個人化設定。</strong></p><br>
+        <h3>三大陣營</h3>
+        <p class="green"><strong>無辜者陣營：</strong></p>
+        <p class="special">大多情況下不會隨意擊殺任何人，說的話可以不具備公信力及約束力，可依發現的屍體身分及剩餘人數構成擊殺的動機。</p>
+        <p class="special"><strong>例如：<br><br>
+            所有下落不明屍體的身分皆被確認，若看到一名可疑玩家擊殺另一名玩家也不能主動擊殺，除非你已查明其原因及屍體身分做出判定。</strong></p>
+        <p class="special">以上敘述是為了防止RDM的問題，先合理判斷後再做出決定，而不是亂殺。</p><br>
+
+        <p class="red"><strong>叛徒陣營：</strong></p>
+        <p class="special">默默擊殺玩家不被其他人發現，或者你是個KING嘎嘎亂殺，誰都阻擋不了你。</p><br>
+
+        <p class="cyan"><strong>中立陣營：</strong></p>
+        <p class="special">中立不屬於任何主要陣營，其中包含了具有威脅性與否的角色。</p>
+        <p class="special">通常會組成小派系，為自己陣營獲取勝利。</p>
+        <p class="special">中立角色有各自獲勝的條件和遊戲風格，並且可能與主要陣營或次要陣營一起獲勝。</p><br><br>
+
+
+        <h3>遊戲勝利的條件</h3>
+        <p class="special"><strong>你所屬的陣營是場上唯一存活的陣營。（極少數中立角色例外）</strong></p>
+        <p class="special">遊戲畫面會顯示當前角色陣營、回合時間、人數資訊等多項提示</p>
+        <div class="wrap">
+            <div class="item">
+                <img src="screenshot/ui.png" alt="">
+            </div>
+        </div><br><br>
+
+
+        <h3>回合時間</h3>
+        <p class="special">一個回合會有三個階段，<u><strong>回合準備時間，回合開始時間，回合時間結束</strong></u>。</p>
+        <p class="special"><strong>回合準備時間</strong></p>
+        <ul>
+            <li>回合準備時間前沒有辦法對任何人造成傷害，回合準備時間結束後會分配所有玩家角色</li>
+        </ul><br>
+
+        <p class="special"><strong>回合開始時間</strong></p>
+        <ul>
+            <li>標準回合時間為5分鐘，每一人死亡會加長回合時間30秒。</li>
+            <li>所有玩家都不知道其他玩家的身分及陣營（少數例外：如探長）</li>
+            <li>無辜者陣營只會看見常規的回合時間，叛徒陣營可看見確切的回合剩餘時間。</li>
+        </ul><br>
+
+        <p class="special"><strong>回合時間結束</strong></p>
+        <ul>
+            <li>回合時間結束若各陣營未分出勝負會以平局結束該回合。</li>
+        </ul><br><br>
+
+
+        <h3>搜查屍體</h3>
+        <p class="special">搜查屍體可能帶給你一些資訊來推理是誰下的手。</p>
+        <div class="wrap">
+            <div class="item">
+                <img src="screenshot/identify.png" alt="">
+            </div>
+        </div><br>
+
+        <p class="special">每一位屍體被確認，畫面上方HUD就會亮起該玩家的角色代表顏色。記分板也會顯示確認死亡的屍體名單。</p>
+        <p class="special">這是無辜者或者部分中立陣營角色打開記分板所顯示的資訊，它們只能透過確認死亡來得知場上剩餘哪些人存活。</p>
+        <div class="wrap">
+            <div class="item">
+                <img src="screenshot/innocent scoreboard.png" alt="">
+            </div>
+        </div><br>
+
+        <p class="special">叛徒及邪惡的中立陣營角色則可以不用確認死亡來得知剩餘哪些人存活，會在記分板上顯示下落不明。</p>
+        <div class="wrap">
+            <div class="item">
+                <img src="screenshot/evil role scoreboard.png" alt="">
+            </div>
+        </div><br><br>
+
+
+        <h3>回合統計</h3>
+        <p class="special">回合時間結束後會有統計表紀錄該回合中的所有事件。</p>
+        <!--<div class="wrap"> -- because gitlfs bandwidth problem, so we use youtube now.
+            <video id="movie" autoplay muted controls loop poster="" width="1280" height="720">
+                <source src="https://www.youtube.com/watch?v=no1oaUpDLIw&ab_channel=Racpy" type='video/mp4' />
+                您的瀏覽器不支援HTML 5影片播放標籤格式。
+                Your browser does not support the video tag.
+            </video>
+        </div><br><br>-->
+        <div class="wrap">
+            <div class="item">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/no1oaUpDLIw?rel=0&autoplay=1&loop=1&mute=1&playlist=no1oaUpDLIw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div><br><br>
+
+
+        <h3>Karma 業力值 | 基礎值：1000</h3>
+        <p class="special">當你在該回合中傷害或擊殺同陣營的玩家都會降低業力值並在下回合中進行套用。</p>
+        <p class="special">業力值低於基礎值會導致你造成的傷害會被遞減，傷害遞減比例取決於業力值低於基礎值多或少。</p><br><br>
+
+        <h3>裝備商店</h3>
+        <p class="special"><strong>三個陣營中部分角色可開啟商店［C］，擊殺高價值敵人或一定比例的敵人數量會獲取積分。</strong></p>
+        <p class="special"><strong><i><u>各個角色獲取積分的規則可能會些許不同</u></i></strong></p>
+        <!--<div class="wrap"> -- because gitlfs bandwidth problem, so we use youtube now.
+            <video id="movie" autoplay muted controls loop poster="" width="1280" height="720">
+                <source src="" type='video/mp4' />
+                您的瀏覽器不支援HTML 5影片播放標籤格式。
+                Your browser does not support the video tag.
+            </video>
+        </div><br><br>-->
+        <div class="wrap">
+            <div class="item">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/nu0arOr6bRw?rel=0&autoplay=1&loop=1&mute=1&playlist=nu0arOr6bRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div><br><br>
+    </div>
+</body>
+</html>
